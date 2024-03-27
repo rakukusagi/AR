@@ -1,0 +1,34 @@
+<!doctype html>
+<html lang="en">
+  <head>
+    <title>&lt;model-viewer&gt; template</title>
+    <meta charset="utf-8">
+    <meta name="description" content="&lt;model-viewer&gt; template">
+    <meta name="viewport" content="width=device-width, initial-scale=1">
+    <link type="text/css" href="./styles.css" rel="stylesheet"/>
+  </head>
+  <body>
+    <!-- <model-viewer> HTML element -->
+    <model-viewer src="chonky_cat_trio3.glb" ar ar-modes="webxr scene-viewer quick-look" camera-controls tone-mapping="commerce" poster="poster.webp" shadow-intensity="1" auto-rotate>
+      <button class="Hotspot" slot="hotspot-1" data-position="-0.31281586148219376m 0.5229614406924784m 0.26930003766897326m" data-normal="0.27308452415463247m 0.924646080796847m 0.2654326052584133m" data-visibility-attribute="visible">
+          <div class="HotspotAnnotation">黑貓</div>
+      </button><button class="Hotspot" slot="hotspot-2" data-position="-0.013733570860985256m 0.5381877224475793m 0.23151563240216624m" data-normal="-0.12303783459559078m 0.9700654290897217m 0.2093675107150161m" data-visibility-attribute="visible">
+          <div class="HotspotAnnotation">波斯貓</div>
+      </button><button class="Hotspot" slot="hotspot-3" data-position="0.3082330538419908m 0.5379398137399168m 0.266967952559602m" data-normal="-0.13370611904232793m 0.9673084143261985m 0.21549270359892544m" data-visibility-attribute="visible">
+          <div class="HotspotAnnotation">花貓</div>
+      </button>
+      <div class="progress-bar hide" slot="progress-bar">
+          <div class="update-bar"></div>
+      </div>
+      <button slot="ar-button" id="ar-button">
+          View in your space
+      </button>
+      <div id="ar-prompt">
+          <img src="ar_hand_prompt.png">
+      </div>
+    </model-viewer>  
+    <script src="script.js"></script>
+    <!-- Loads <model-viewer> for browsers: -->
+    <script type="module" src="https://ajax.googleapis.com/ajax/libs/model-viewer/3.4.0/model-viewer.min.js"></script>
+  </body>
+</html>
